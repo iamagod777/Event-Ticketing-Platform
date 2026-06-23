@@ -1,0 +1,6 @@
+{
+  "name": "Event Ticket Studio",
+  "description": "A high-performance SaaS platform where event organizers design posters and attendees generate personalized, AI-enhanced event tickets.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

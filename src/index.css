@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "JetBrains Mono", "Space Mono", monospace;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-bg: #000000;
+  --color-brand-surface: #111111;
+  --color-brand-border: rgba(255, 255, 255, 0.2);
+  --color-brand-primary: #00FF00;
+  --color-brand-secondary: #00FF00;
+  --color-brand-violet: #00FF00;
+  --color-brand-pink: #00FF00;
+  --color-brand-gray: #a0a0a0;
+}
+
+/* Base resets & custom scrollbar to match dark mode */
+body {
+  background-color: var(--color-brand-bg);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  image-rendering: pixelated;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border);
+  border-radius: 0px;
+  border: 2px solid var(--color-brand-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-primary);
+}
+
+/* Brutalist sharp containers instead of glassmorphism */
+.glass-panel {
+  background-color: #111111;
+  border: 2px solid var(--color-brand-primary);
+  box-shadow: 4px 4px 0px #00FF00;
+}
+
+.primary-gradient {
+  background: #00FF00;
+  color: #000000 !important;
+}
+
+.button-glow:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+/* Brutalist high contrast scanlines background optional */
+.brutalist-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
